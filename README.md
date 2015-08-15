@@ -94,4 +94,4 @@ chmod u+x a.out
 ```
 
 ##License
-'Anwar' is under Apache License Version 2.0. Please read LICENSE.md for more information.
+'Anwar' is under Apache License Version 2.0. Please read LICENSE for more information.
