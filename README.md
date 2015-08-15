@@ -48,6 +48,7 @@ anwar.out
 ```
 
 ## Contributing to Anwar
+To contribute to Anwar, create a new branch and then sumbit a merge request. Please understand that only valuable patches will be integrated into the master branch. Please read the following instructions to install pre-requisite compilers, clone this repository, understand the structure of Anwar, and to compile your build.
 
 ###Installing Compilers
 Anwar uses 'C', 'C++', and 'BASH' programming languages to operate. While 'BASH' is a part of the Ubuntu operating system by default, 'C' and 'C++' compilers might not be available on some machines running Ubuntu and its derivatives. Use the following commands to install the compilers for 'C' and 'C++' programming languages.
