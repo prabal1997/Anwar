@@ -26,7 +26,7 @@
 //----------------------------------------------------
 
 //enum definitions for Help and Error handling
-namespace Definitions
+namespace namespace_def
 {
 	enum Help
 	{ HELP_VIM, HELP_COMPILER_LIST, HELP_THEMES };
@@ -45,7 +45,10 @@ namespace namespace_format
 	//input module
 	char func_validPrompt(int, std::string);	
 	//help module
-	void func_help(int);
+	namespace namespace_def
+	{
+		void func_help(int);
+	}
 	//package module
 	void func_writeVIM(std::string);
 	//internet check

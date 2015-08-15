@@ -78,7 +78,7 @@ int main()
 	goto_VIM:
 
 	func_line(2,2);
-	func_print(0, "Would you like to install VIM text-editor, GitHub version control, UNIX cURL & the 'Pathogen' plugin manager? (Y/N/H):   ",-1);
+	func_print(0, "Would you like to install VIM text-editor, Git version control, UNIX cURL & the 'Pathogen' plugin manager? (Y/N/H):   ",-1);
 
 	//INPUTTING A RESPONSE FROM THE USER	
 	char char_VIM;
@@ -142,7 +142,7 @@ int main()
 	else if( (char_VIM=='H') || (char_VIM=='h') )
 	{
 		func_line(2,2);
-		func_help(Definitions::HELP_VIM); //inputting issue (using ENUMS) helps explain the user the what the purpose of installation is, and the consequences of failure/not installing tools
+		namespace_def::func_help(namespace_def::HELP_VIM); //inputting issue (using ENUMS) helps explain the user the what the purpose of installation is, and the consequences of failure/not installing tools
 		
 		//returning to the choice menu after the question		
 		goto goto_VIM;

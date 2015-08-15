@@ -27,10 +27,30 @@
 #include"anwar_head.h"
 
 //----------------------------------------------------
-
-void func_help(int)
+namespace namespace_def
 {
+	void func_help(int help_code)
+	{	
+		if (help_code==::namespace_def::HELP_VIM)
+		{
+			using namespace_format::func_line;
+			using namespace_format::func_print;
+		
+			func_print(0, "Definitions for the referred things are:", 1);
 
+			func_print(0, "VIM:", 0);
+			func_print(0, "An open-source, powerful and configurable text editor.", 1);
+
+			func_print(0, "Git:", 0);
+			func_print(0, "A tool that allows developers to share their code across the world.", 1);
+
+			func_print(0, "cURL:", 0);
+			func_print(0, "A tool that allows you to download content through URLs from the Command Line", 1);
+
+			func_print(0, "Pathogen:", 0);
+			func_print(0, "A tool that allows you to easily  add plugins to the VIM text-editor", 0);
+		}
+	}
 }
 
 //RECEIVES A VALID INPUT FROM THE USER
