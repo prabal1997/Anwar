@@ -57,10 +57,10 @@ Anwar uses 'C', 'C++', and 'BASH' programming languages to operate. While 'BASH'
 sudo apt-get update
 
 # installing 'C' compiler
-sudo apt-get gcc
+sudo apt-get install gcc
 
 #installing 'C++' compiler
-sudo apt-get g++
+sudo apt-get install g++
 ```
 
 ###Downloading Anwar
@@ -86,8 +86,10 @@ cd ~/anwar/anwar-ide-cli-setup
 # compiling Anwar by listing every file with '.cpp' or '.h' extension after 'g++'
 g++ anwar.cpp anwar_head.h fwd_decl.h format.cpp ind_mdl.cpp pck_mdl.cpp 
 
-# executing Anwar
+# changing file permissions for Anwar
 chmod u+x a.out
+
+# running Anwar
 ./a.out
 ```
 
