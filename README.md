@@ -44,7 +44,7 @@ cd ~/.anwar/anwar-ide-cli-setup
 chmod u+x anwar.out
 
 # running Anwar
-anwar.out
+./anwar.out
 ```
 
 ## Contributing to Anwar
