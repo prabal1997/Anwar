@@ -117,7 +117,9 @@ int main()
 		func_line(2,2);
 		func_print(0, "CONFIGURING VIM", 0);
 	//PATHOGEN VIM CONFIGURATION
-		//a new .vimrc is created and written into
+		//a '~/.vimrc' is backed up as '~/.vimrcbackup' , and a copy of it is created in the working directory of Anwar
+		system("cp ~/.vimrc ~/.vimrcbackup");
+		system("cp ~/.vimrc .vimrc");
 		func_writeVIM("execute pathogen#infect()");
 		func_writeVIM("syntax on");
 		func_writeVIM("filetype plugin indent on");
