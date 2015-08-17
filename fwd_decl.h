@@ -29,7 +29,7 @@
 namespace namespace_def
 {
 	enum Help
-	{ HELP_VIM, HELP_COMPILER_LIST, HELP_THEMES };
+	{ HELP_VIM, HELP_PROJECT, HELP_BUFFER, HELP_CODE, HELP_CODEWRITE, HELP_FUNCT, HELP_COMPL, HELP_INTEG, HELP_THEMES, HELP_LANG };
 }
 
 //formatting module
@@ -42,8 +42,9 @@ namespace namespace_format
 
 //INDEPENDENT FUNCTIONS
 	
-	//input module
+	//input modules
 	char func_validPrompt(int, std::string);	
+	int func_validInput(int, std::string);
 	//help module
 	namespace namespace_def
 	{
@@ -54,6 +55,10 @@ namespace namespace_format
 	//internet check
 	bool func_internetAvail();
 
+//package modules
+
+	//package managers
+	void func_nerdtree();
 //----------------------------------------------------
 
 #endif

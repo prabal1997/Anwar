@@ -75,7 +75,7 @@ namespace namespace_packages
 			system("git clone https://github.com/vim-scripts/project.tar.gz.git");
 		}
 
-		void func_cvim()
+		void func_ide()
 		{
 			//INSTALLATION
 			system("cd ~/.vim/bundle");			
@@ -88,7 +88,7 @@ namespace namespace_packages
 	{
 		void func_bufexplorer()
 		{
-			//INSTALLATION
+			//INSTALLATION  //VUNDLE
 			system("cd ~/.vim/bundle");
 			system("git clone https://github.com/scrooloose/nerdtree.git");
 		}

@@ -73,12 +73,12 @@ int main()
 	   	goto goto_THANKS;
 	   }
 
-//GENERAL SETUP: INSTALLING VIM, GIT, CURL, PATHOGEN, AND CONFIGURING .vimrc FOR FIRST USE
+//GENERAL SETUP: INSTALLING VIM, GIT, CURL, PATHOGEN, VUNDLE AND CONFIGURING .vimrc FOR FIRST USE
 	//SETTING UP A LOOP TO REPEAT TILL IT RECEIVES AN ACCEPTABLE VALUE	
 	goto_VIM:
 
 	func_line(2,2);
-	func_print(0, "Would you like to install VIM text-editor, Git version control, UNIX cURL & the 'Pathogen' plugin manager? (Y/N/H):   ",-1);
+	func_print(0, "Would you like to install VIM text-editor, Git version control, UNIX cURL, and the 'Pathogen' and 'Vundle' plugin manager? (Y/N/H):   ",-1);
 
 	//INPUTTING A RESPONSE FROM THE USER	
 	char char_VIM;
@@ -127,7 +127,7 @@ int main()
 		func_writeVIM("set number");
 		system("mv .vimrc ~/.vimrc");  //MOVING BACK NEW .vimrc to ~
 		func_print(1, "Configuration complete.", 0);
-	
+
 	//THE PROGRAM NOW NECESSARILY NEEDS TO DO WHAT IT'D DONE IF THE USER HAD CHOSEN NO THE FIRST TIME
 		goto goto_noVIM;
 		
@@ -149,9 +149,11 @@ int main()
  	}	
 	else
 	{
-		func_print(0, "Invalid Input. Please try again.", 0);	
+		func_print(1, "Invalid Input. Please try again.", 0);	
 		goto goto_VIM;
 	}	
+
+func_line(2,1);
 
 //UNIFIED INTERACTIVE PACKAGE MANAGER
 
@@ -159,6 +161,45 @@ int main()
 //gives a list of sub-parts of the component
 //asks for a digit as input to install, or ('H' or 'h') for help.
 
+//ASKING FOR INSTALLATION OF PROJECT MANAGERS
+
+	char char_project;
+	char_project = func_validPrompt(3, "Would you like to install a Project/Filetree browsing tool for VIM (Y/N/H):");
+
+goto_projectAgain:
+
+	func_line(2,2);
+
+	if (char_project=='Y' || char_project=='y')
+	{
+	//Inputting the tool that user wants to install
+		func_print(0, "Given below is the list of tools you can install:", 1);
+		func_print(0, "NERDTree                                       1", 0);
+		func_print(0, "vtreeexplorer                                  2", 0);
+		func_print(0, "project                                        3", 0);
+		func_print(0, "ide                                            4", 1);
+		
+		int int_project_choice;
+		int_project_choice = func_validInput(4, "Please enter the number corresponding to the tool you would like install:");
+	
+	//Asking user if they'd like to install another tool of same kind
+		char char_projectAgain;
+		char_projectAgain = func_validPrompt(2, "Would you like to install another Project/Filetree browsing tool for VIM (Y/N):");
+
+		if (char_projectAgain=='Y' || char_projectAgain=='y')
+		{
+			goto goto_projectAgain;	
+		}
+		else if (char_project=='N' || char_project=='n')
+		{
+		//	func_line(2,2);
+		}
+		else if (char_project=='H' || char_project=='h')
+		{
+			func_line(2,2);
+			namespace_def::func_help(namespace_def::HELP_PROJECT);
+		}
+	}
 //THANK-YOU MESSAGE
 goto_THANKS:	
 	func_line(2, 2);
@@ -167,5 +208,4 @@ goto_THANKS:
 	
 	return 0;
 }
-
 //----------------------------------------------------
