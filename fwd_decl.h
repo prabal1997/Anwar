@@ -29,7 +29,7 @@
 namespace namespace_def
 {
 	enum Help
-	{ HELP_VIM, HELP_PROJECT, HELP_BUFFER, HELP_CODE, HELP_CODEWRITE, HELP_FUNCT, HELP_COMPL, HELP_INTEG, HELP_THEMES, HELP_LANG };
+	{ HELP_VIM, HELP_LANG, HELP_PROJECT, HELP_BUFFER, HELP_CODE, HELP_CODEWRITE, HELP_FUNCT, HELP_COMPL, HELP_INTEG, HELP_THEMES };
 }
 
 //formatting module
@@ -110,7 +110,7 @@ namespace namespace_format
 		namespace namespace_funct
 		{
 			void func_matchit();
-			void bufkill();
+			void func_bufkill();
 			void func_undotree();
 			void func_surround();
 		}
@@ -121,11 +121,11 @@ namespace namespace_format
 		}
 		namespace namespace_integ
 		{
-			void fugitive();
-			void perforce();
-			void lawrencium();
-			void gitv();
-			void splice();
+			void func_fugitive();
+			void func_perforce();
+			void func_lawrencium();
+			void func_gitv();
+			void func_splice();
 		}
 		namespace namespace_themes
 		{

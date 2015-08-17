@@ -65,55 +65,137 @@ namespace namespace_def
 			func_print(0, "This gives you a 'project' view of files, rather than a straight file system view.", 1);
 
 			func_print(0, "ide:", 0);
-			func_print(0, "Tracks files status (open/edited/closed/read only) within a project with icons.", 0);
+			func_print(0, "Tracks files status (open/edited/closed/read only) within a project with icons.", 1);
 			func_print(0, "It also automatically builds and updates syntax highlight rules based on the project files (C/C++/Java).", 0);
 			func_print(0, "Moreover, it helps avoids buffer duplication.", 0);
 		}
 		else if (help_code==::namespace_def::HELP_BUFFER)
 		{
 			using namespace_format::func_print;
+
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "bufexplorer:", 0);
+			func_print(0, "A tool that lets you navigate through open buffers.", 1);
+
+			func_print(0, "minibufexplorer:", 0);
+			func_print(0, "An elegant, compact buffer explorer.", 1);
+
+			func_print(0, "Command-T plugin:", 0);
+			func_print(0, "A tool inspired by the 'Go to File' window bound to Command-T in TextMate ", 1);
+			
+			func_print(0, "MRU:", 0);
+			func_print(0, "A tool that lets you access recently opened files.", 1);
+
+			func_print(0, "ctrlp:", 0);
+			func_print(0, "A finder with regex support.", 1);
+	
+			func_print(0, "FuzzyFinder:", 0);
+			func_print(0, "Another finder with regex support.", 0);
 		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
 		}
 		else if (help_code==::namespace_def::HELP_CODE)
 		{
 			using namespace_format::func_print;
-		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
+			
+			/*
+			void func_taglist();
+			void func_tagbar();
+			void func_indexer();
+			void func_cctree();
+			void func_exutility();
+			void func_showmarks();
+			void func_lhtags();
+			*/
+			
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "taglist:", 0);
+			func_print(0, "A tool that that gives you an outline of the source you are viewing.", 1);
+
+			func_print(0, "Tagbar:", 0);
+			func_print(0, "A tool like 'taaglist' that can otder tage by scope.", 0);
+			func_print(0, "Highly recommended for programming languages like C++, JAVA, & Python.", 1);
+
+			func_print(0, "Indexer:", 0);
+			func_print(0, "Generated tags for all files in the project automatically.", 1);
+			
+			func_print(0, "CCTree:", 0);
+			func_print(0, "A Call-Tree Explorer and code flow analyzer", 1);
+
+			func_print(0, "exUtility:", 0);
+			func_print(0, "Allows global search, symbol search, tag track etc.", 1);
+			func_print(0, "ShowMarks:", 0);
+			func_print(0, "Visually shows the location of marks.", 1);
+
+			func_print(0, "lh-tags:", 0);
+			func_print(0, "Automatically updates ctags database and allows code navigation.", 0);
 			
 		}
 		else if (help_code==::namespace_def::HELP_CODEWRITE)
 		{
 			using namespace_format::func_print;
-		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
+
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "AutoComplPop:", 0);
+			func_print(0, "A code completion tool.", 1);
+
+			func_print(0, "YouCompleteMe:", 0);
+			func_print(0, "Another Code Completion plugin.", 1);
+
+			func_print(0, "CRefVim:", 0);
+			func_print(0, "A C-reference manual especially designed for VIM.", 1);
 			
+			func_print(0, "Omni Completion:", 0);
+			func_print(0, "Another Code Completion plugin.", 0);
 		}
 		else if (help_code==::namespace_def::HELP_FUNCT)
 		{
 			using namespace_format::func_print;
-		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
-		
+
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "matchit:", 0);
+			func_print(0, "A tool to improve text matching in VIM.", 1);
+
+			func_print(0, "bufkill:", 0);
+			func_print(0, "Allows you to delete buffer without closing the window.", 1);
+
+			func_print(0, "undotree:", 0);
+			func_print(0, "A tool to visualize your undo tree.", 1);
+			
+			func_print(0, "surround:", 0);
+			func_print(0, "Allows you to easily modify parenthesis/quotes/XML-tags, and much more.", 0);
 		}
 		else if (help_code==::namespace_def::HELP_COMPL)
 		{
 			using namespace_format::func_print;
-		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
-		
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "Build Tools Wrapper:", 0);
+			func_print(0, "Provides ways to compile, test, and execute programs.", 0);
 		}
 		else if (help_code==::namespace_def::HELP_INTEG)
 		{
 			using namespace_format::func_print;
-		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
+
+			func_print(0, "Definitions for the listed tools  are:", 1);
+
+			func_print(0, "fugitive:", 0);
+			func_print(0, "Provides Git integration.", 1);
+
+			func_print(0, "perforce:", 0);
+			func_print(0, "Provides perforce integration.", 1);
+
+			func_print(0, "lawrencium:", 0);
+			func_print(0, "Provides Mercurial Integration.", 1);
+			
+			func_print(0, "gitv:", 0);
+			func_print(0, "A gitk clone for VIM.", 1);
+
+			func_print(0, "Splice:", 1);
+			func_print(0, "A plugin for resolving conflicts during three-way merges.", 0);
 	
 		}
 		else if (help_code==::namespace_def::HELP_THEMES)
@@ -128,8 +210,7 @@ namespace namespace_def
 		{
 			using namespace_format::func_print;
 		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
+			func_print(0, "A list of programming languages to choose from was provided.", 0);
 		
 		}
 		else
@@ -137,7 +218,7 @@ namespace namespace_def
 			using namespace_format::func_print;
 		
 			func_print(0, "ERROR:", 0);
-			func_print(0, "Please report the error at prabal.gupta.97@gmail.com.", 0);
+			func_print(0, "Please report the issue at https://github.com/prabal1997/anwar-ide-cli-setup/issues", 1);
 		}
 	}
 }
