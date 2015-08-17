@@ -45,20 +45,92 @@ namespace namespace_format
 	//input modules
 	char func_validPrompt(int, std::string);	
 	int func_validInput(int, std::string);
+	int func_validInput2(int, std::string);
 	//help module
 	namespace namespace_def
 	{
 		void func_help(int);
 	}
-	//package module
+	//writing module
 	void func_writeVIM(std::string);
+	void func_writeLIST(std::string);
 	//internet check
 	bool func_internetAvail();
 
 //package modules
 
 	//package managers
-	void func_nerdtree();
+	namespace namespace_packages
+	{
+		namespace namespace_language
+		{
+			void language_cplusplus();
+			void language_c();
+			void language_csharp();
+			void language_python();
+			void language_java();
+			void language_lisp();
+			void language_haskell();
+		}
+		
+		namespace namespace_project
+		{
+			void func_nerdtree();
+			void func_vtreeexplorer();
+			void func_project();
+			void func_ide();
+		}
+		namespace namespace_buffer
+		{
+			void func_bufexplorer();
+			void func_minibufexpl();
+			void func_commandtplugin();
+			void func_mru();
+			void func_ctrlp();
+			void func_fuzzyfinder();
+		}
+		namespace namespace_code
+		{
+			void func_taglist();
+			void func_tagbar();
+			void func_indexer();
+			void func_cctree();
+			void func_exutility();
+			void func_showmarks();
+			void func_lhtags();
+		}
+		namespace namespace_codewrite
+		{
+			void func_autocomplpop();
+			void func_youcompleteme();
+			void func_crefvim();
+			void func_omnicompletion();
+		}
+
+		namespace namespace_funct
+		{
+			void func_matchit();
+			void bufkill();
+			void func_undotree();
+			void func_surround();
+		}
+
+		namespace namespace_compl
+		{
+			void func_buildtoolswrapper(); 
+		}
+		namespace namespace_integ
+		{
+			void fugitive();
+			void perforce();
+			void lawrencium();
+			void gitv();
+			void splice();
+		}
+		namespace namespace_themes
+		{
+		}
+	}
 //----------------------------------------------------
 
 #endif

@@ -68,17 +68,17 @@ int main()
 	bool internetAvail( func_internetAvail() );
 	
 	//going to the end of the program if there's no internet
-	   if (internetAvail==0)
-	   {
-	   	goto goto_THANKS;
-	   }
+	//   if (internetAvail==0)
+	//   {
+	//   	goto goto_THANKS;
+	//   }
 
-//GENERAL SETUP: INSTALLING VIM, GIT, CURL, PATHOGEN, VUNDLE AND CONFIGURING .vimrc FOR FIRST USE
+//GENERAL SETUP: INSTALLING VIM, GIT, CURL, PATHOGEN, AND CONFIGURING .vimrc FOR FIRST USE
 	//SETTING UP A LOOP TO REPEAT TILL IT RECEIVES AN ACCEPTABLE VALUE	
 	goto_VIM:
 
 	func_line(2,2);
-	func_print(0, "Would you like to install VIM text-editor, Git version control, UNIX cURL, and the 'Pathogen' and 'Vundle' plugin manager? (Y/N/H):   ",-1);
+	func_print(0, "Would you like to install VIM text-editor, Git version control, UNIX cURL, and the 'Pathogen' plugin manager? (Y/N/H):   ",-1);
 
 	//INPUTTING A RESPONSE FROM THE USER	
 	char char_VIM;
@@ -162,12 +162,10 @@ func_line(2,1);
 //asks for a digit as input to install, or ('H' or 'h') for help.
 
 //ASKING FOR INSTALLATION OF PROJECT MANAGERS
-
-	char char_project;
-	char_project = func_validPrompt(3, "Would you like to install a Project/Filetree browsing tool for VIM (Y/N/H):");
-
-goto_projectAgain:
-
+//this module can be used again and again, since all the variables inside it have loop scope
+for (char char_project='H', char_projectAgain='Y' ; (char_project=='H')||(char_project=='h')||(char_projectAgain=='Y')||(char_projectAgain=='y') ;)
+{
+	char_project = func_validPrompt(3, "Would you like to install a Project/Filetree browsing tool for VIM? (Y/N/H):");
 	func_line(2,2);
 
 	if (char_project=='Y' || char_project=='y')
@@ -180,30 +178,161 @@ goto_projectAgain:
 		func_print(0, "ide                                            4", 1);
 		
 		int int_project_choice;
-		int_project_choice = func_validInput(4, "Please enter the number corresponding to the tool you would like install:");
+		int_project_choice = func_validInput2(4, "Please enter the number corresponding to the tool you would like to install:");
 	
+	//calling appropriate functions for each value that the user can input
+	
+		func_line(2,2);	
+
+		if (int_project_choice==1)
+		{	
+			namespace_packages::namespace_project::func_nerdtree();
+		}
+		else if (int_project_choice==2)
+		{
+			namespace_packages::namespace_project::func_vtreeexplorer();
+		}
+		else if (int_project_choice==3)
+		{
+			namespace_packages::namespace_project::func_project();
+		}
+		else if (int_project_choice==4)
+		{
+			namespace_packages::namespace_project::func_ide();
+		}
+
 	//Asking user if they'd like to install another tool of same kind
+		func_line(2, 1); //practically aesthetical
+	
 		char char_projectAgain;
 		char_projectAgain = func_validPrompt(2, "Would you like to install another Project/Filetree browsing tool for VIM (Y/N):");
 
-		if (char_projectAgain=='Y' || char_projectAgain=='y')
+		func_line(2, 0); //practically aesthical
+		
+		if (char_projectAgain=='Y' || char_projectAgain=='y') //practically aesthetical
 		{
-			goto goto_projectAgain;	
+			func_print(2, "Asking again...",-1);
 		}
-		else if (char_project=='N' || char_project=='n')
+		else if (char_projectAgain=='N' || char_projectAgain=='n')
 		{
-		//	func_line(2,2);
-		}
-		else if (char_project=='H' || char_project=='h')
-		{
-			func_line(2,2);
-			namespace_def::func_help(namespace_def::HELP_PROJECT);
+		//making sure that char_projectAgain AND char_project are both 'No' even when one of them is 'No'
+		//this is being done because the loop will restart if even one of them is 'Yes' or 'Help'
+			char_project='N';
+			break;
 		}
 	}
+	else if (char_project=='N' || char_project=='n')
+	{
+	//making sure that char_project AND char_projectAgain are both 'No' even when one of them is 'No'
+	//this is being done because the loop will restart if even one of them is 'Yes' or 'Help'
+		char_projectAgain='N';
+		break;
+	}		
+	else if (char_project=='H' || char_project=='h')
+	{
+		namespace_def::func_help(namespace_def::HELP_PROJECT);
+		func_line(2,1);
+	}
+}
+
+//ASKING FOR INSTALLATION OF COMPILERS/INTERPRETORS MANAGERS
+//this module can be used again and again, since all the variables inside it have loop scope
+for (char char_project='H', char_projectAgain='Y' ; (char_project=='H')||(char_project=='h')||(char_projectAgain=='Y')||(char_projectAgain=='y') ;)
+{
+	char_project = func_validPrompt(3, "Would you like to install a compiler/interpretor for programming? (Y/N/H):"); //change here
+	func_line(2,2);
+
+	if (char_project=='Y' || char_project=='y')
+	{
+	//Inputting the tool that user wants to install
+		func_print(0, "Given below is the list of tools you can install:", 1); //change here
+		func_print(0, "C++                                            1", 0);
+		func_print(0, "C                                              2", 0);
+		func_print(0, "C#                                             3", 0);
+		func_print(0, "Python                                         4", 0);
+		func_print(0, "JAVA                                           5", 0);
+		func_print(0, "JAVA                                           6", 0);
+		func_print(0, "Haskell                                        7", 1);		
+		
+		int int_project_choice;
+		int_project_choice = func_validInput2(7, "Please enter the number corresponding to the tool you would like to install:"); //change here
+	
+	//calling appropriate functions for each value that the user can input
+	
+		func_line(2,2);	
+
+		if (int_project_choice==1) //change here
+		{	
+			namespace_packages::namespace_language::language_cplusplus();
+		}
+		else if (int_project_choice==2)
+		{
+			namespace_packages::namespace_language::language_c();
+		}
+		else if (int_project_choice==3)
+		{
+			namespace_packages::namespace_language::language_csharp();
+		}
+		else if (int_project_choice==4)
+		{
+			namespace_packages::namespace_language::language_python();
+		}
+		else if (int_project_choice==5)
+		{
+			namespace_packages::namespace_language::language_java();
+		}
+		else if (int_project_choice==6)
+		{
+			namespace_packages::namespace_language::language_lisp();
+		}
+		else if (int_project_choice==7)
+		{
+			namespace_packages::namespace_language::language_haskell();
+
+		}
+
+	//Asking user if they'd like to install another tool of same kind
+		func_line(2, 1); //practically aesthetical
+	
+		char char_projectAgain;
+		char_projectAgain = func_validPrompt(2, "Would you like to install compiler/interpretor? (Y/N):");
+
+		func_line(2, 0); //practically aesthical
+		
+		if (char_projectAgain=='Y' || char_projectAgain=='y') //practically aesthetical
+		{
+			func_print(2, "Asking again...",-1);
+		}
+		else if (char_projectAgain=='N' || char_projectAgain=='n')
+		{
+		//making sure that char_projectAgain AND char_project are both 'No' even when one of them is 'No'
+		//this is being done because the loop will restart if even one of them is 'Yes' or 'Help'
+			char_project='N';
+			break;
+		}
+	}
+	else if (char_project=='N' || char_project=='n')
+	{
+	//making sure that char_project AND char_projectAgain are both 'No' even when one of them is 'No'
+	//this is being done because the loop will restart if even one of them is 'Yes' or 'Help'
+		char_projectAgain='N';
+		break;
+	}		
+	else if (char_project=='H' || char_project=='h')
+	{
+		namespace_def::func_help(namespace_def::HELP_LANG);
+		func_line(2,1);
+	}
+}
+
+//copying the final list of downloaded components to the desktop and the hidden .vim directory in ~
+system("cp list.txt ~/Desktop");
+system("cp list.txt ~/.vim");
+
 //THANK-YOU MESSAGE
 goto_THANKS:	
-	func_line(2, 2);
 	func_print(0, "Thanks.\n   Please report any bugs/issues at prabal.gupta.97@gmail.com.", 0);
+	func_print(0, "Please refer to the list of installed components on your desktop and inside the hidden .vim directory.", 0);
 	func_line(2, 2);
 	
 	return 0;
