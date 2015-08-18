@@ -158,10 +158,10 @@ int main()
 	bool internetAvail( func_internetAvail() );
 	
 	//going to the end of the program if there's no internet
-	//   if (internetAvail==0)
-	//   {
-	//   	goto goto_THANKS;
-	//   }
+	   if (internetAvail==0)
+	   {
+	   	goto goto_THANKS;
+	   }
 
 //GENERAL SETUP: INSTALLING VIM, GIT, CURL, PATHOGEN, AND CONFIGURING .vimrc FOR FIRST USE
 	//SETTING UP A LOOP TO REPEAT TILL IT RECEIVES AN ACCEPTABLE VALUE	
