@@ -29,6 +29,12 @@ mkdir ~/.anwar
 # navigating to the new directory
 cd ~/.anwar
 
+# updating the repository list
+sudo apt-get update
+
+# installing git to download resources
+sudo apt-get install git
+
 # downloading the executable from github to the new directory
 git clone https://github.com/prabal1997/anwar-ide-cli-setup.git
 ```
