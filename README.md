@@ -61,6 +61,7 @@ sudo apt-get install g++
 ```
 
 ###Downloading Anwar
+Execute the following commands in sequence to download Anwar on your Ubuntu operating system.
 ```sh
 # creating a new directory
 mkdir ~/anwar
