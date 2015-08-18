@@ -1,13 +1,12 @@
 # Anwar
 Anwar is a simple, lightweight tool that gives you the power to build your own development enviornment in VIM.
-
 ![Anwar Logo](http://i.imgur.com/kIXS6Yr.jpg)
 
 Anwar is a CLI(Command Line Interface) program that simplifies the process of creating a custom VIM based IDE(Integrated Development Environment) for everyone, especially those new to developing on Ubuntu.
 ## What does Anwar do?
 Anwar helps you install the different components that an IDE uses and configures the VIM text-editor appropriately. This allows you to develop your own blazing-fast lightweight VIM based IDE on Ubuntu.
 
-You can use Anwar to set up a new development environment in a matter of mere minutes, allowing you to practically set up any machine as your development hub.
+You can use Anwar to set up a new development environment in a matter of mere minutes, allowing you to practically set up any machine as your development hub - whether on the cloud, or the desktop.
 
 ## What systems can Anwar run on?
 Anwar is compatible with Ubuntu and all its official flavours, including Ubuntu Kylin, Edubuntu, Ubuntu GNOME, Kubuntu, Lubuntu, Xubuntu, Ubuntu Studio, and Ubuntu MATE.
@@ -90,6 +89,10 @@ chmod u+x a.out
 # running Anwar
 ./a.out
 ```
+## Future
+Anwar will eventually have ```ncurses``` based GUI to simplify the program layout and flow. Moreover, development is undergoing to develop a release of Anwar compatible with Microsoft Windows series of operating systems.
 
 ##License
 'Anwar' is licenced under Apache License Version V2. Please read LICENSE for more information.
+
+
