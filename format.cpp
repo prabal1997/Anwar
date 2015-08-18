@@ -36,7 +36,7 @@ namespace namespace_format
 	}
 
 //PRINT SENTENCES WITH NEWLINES BEFORE AND AFTER IT IN FORMAT (IF space_after=-1, the cursor DOES NOT move)
-//func_print(spaces_before, sentences, space_after)
+//func_print(spaces_before, string_sentence, space_after)
 	void func_print(int spaces_before,std::string string_sentence,int spaces_after)
 	{	
 	//prints newlines before the line

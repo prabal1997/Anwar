@@ -16,14 +16,6 @@
 
 //----------------------------------------------------
 
-//SUMMARY (list and syntax of function this contains)
-
-//char func_validPrompt(int, std::string)  :  RECEIVES A VAILD INPUT FROM THE USER (AND RETURNS IT)
-//void func_writeVIM(std::string)  :  WRITES TO THE .vimrc FILE IN THE CURRENT DIRECTORY
-//bool func_internetAvail()  :  CHECKS INTERNET AVAILIBILITY (AND RETURNS THE TRUTH VALUE)
-
-//----------------------------------------------------
-
 #include"anwar_head.h"
 
 //----------------------------------------------------
@@ -47,7 +39,7 @@ namespace namespace_def
 			func_print(0, "A tool that allows you to download content through URLs from the Command Line", 1);
 
 			func_print(0, "Pathogen:", 0);
-			func_print(0, "A tool that allows you to easily  add plugins to the VIM text-editor", 0);
+			func_print(0, "A tool that allows you to easily add plugins to the VIM text-editor", 0);
 		}
 		else if (help_code==::namespace_def::HELP_PROJECT)
 		{
@@ -98,27 +90,17 @@ namespace namespace_def
 		{
 			using namespace_format::func_print;
 			
-			/*
-			void func_taglist();
-			void func_tagbar();
-			void func_indexer();
-			void func_cctree();
-			void func_exutility();
-			void func_showmarks();
-			void func_lhtags();
-			*/
-			
 			func_print(0, "Definitions for the listed tools  are:", 1);
 
 			func_print(0, "taglist:", 0);
 			func_print(0, "A tool that that gives you an outline of the source you are viewing.", 1);
 
 			func_print(0, "Tagbar:", 0);
-			func_print(0, "A tool like 'taaglist' that can otder tage by scope.", 0);
+			func_print(0, "A tool like 'taglist' that can order tags by scope.", 0);
 			func_print(0, "Highly recommended for programming languages like C++, JAVA, & Python.", 1);
 
 			func_print(0, "Indexer:", 0);
-			func_print(0, "Generated tags for all files in the project automatically.", 1);
+			func_print(0, "Generates tags for all files in the project automatically.", 1);
 			
 			func_print(0, "CCTree:", 0);
 			func_print(0, "A Call-Tree Explorer and code flow analyzer", 1);
@@ -202,8 +184,7 @@ namespace namespace_def
 		{
 			using namespace_format::func_print;
 		
-			func_print(0, "Please refer to the following link as the Help module is under construction:", 1);
-			func_print(0, "http://vim.wikia.com/wiki/Use_Vim_like_an_IDE", 0);
+			func_print(0, "Sorry, the theme module is currently under development", 0);
 	
 		}
 		else if (help_code==::namespace_def::HELP_LANG)

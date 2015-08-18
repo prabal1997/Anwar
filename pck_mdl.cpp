@@ -93,8 +93,7 @@ namespace namespace_packages
 		void func_nerdtree()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/scrooloose/nerdtree.git");
+			system("git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree");
 			
 			//ADDITION TO LIST
 			func_writeLIST("NERDTree");
@@ -103,8 +102,7 @@ namespace namespace_packages
 		void func_vtreeexplorer()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/vtreeexplorer.git");
+			system("git clone https://github.com/vim-scripts/vtreeexplorer.git ~/.vim/bundle/vtreeexplorer");
 		
 			//ADDITION TO LIST
 			func_writeLIST("vtreeexplorer");
@@ -113,8 +111,7 @@ namespace namespace_packages
 		void func_project()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");			
-			system("git clone https://github.com/vim-scripts/project.tar.gz.git");
+			system("git clone https://github.com/vim-scripts/project.tar.gz.git ~/.vim/bundle/project.tar.gz");
 		
 			//ADDITION TO LIST
 			func_writeLIST("project");
@@ -123,8 +120,7 @@ namespace namespace_packages
 		void func_ide()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");			
-			system("git clone https://github.com/vim-scripts/c.vim.git");
+			system("https://github.com/dmonllao/vim-IDE.git ~/.vim/bundle/vim-IDE");
 			
 			//ADDITION TO LIST
 			func_writeLIST("ide");
@@ -135,9 +131,8 @@ namespace namespace_packages
 	{
 		void func_bufexplorer()
 		{
-			//INSTALLATION  //VUNDLE
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/scrooloose/nerdtree.git");
+			//INSTALLATION
+			system("git clone https://github.com/jlanzarotta/bufexplorer.git ~/.vim/bundle/bufexplorer");
 			
 			//ADDITION TO LIST
 			func_writeLIST("bufexplorer");
@@ -146,8 +141,7 @@ namespace namespace_packages
 		void func_minibufexpl()
 		{
 			//INSTALLATION //UNKNOWN
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/fholgado/minibufexpl.vim.git");
+			system("git clone https://github.com/fholgado/minibufexpl.vim.git ~/.vim/bundle/minibufexpl.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("minibufexpl");
@@ -156,8 +150,7 @@ namespace namespace_packages
 		void func_commandtplugin()
 		{
 			//INSTALLATION //PATHOGEN
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/wincent/command-t.git");
+			system("git clone https://github.com/wincent/command-t.git ~/.vim/bundle/command-t");
 		
 			//ADDITION TO LIST
 			func_writeLIST("command-t explorer");
@@ -166,8 +159,7 @@ namespace namespace_packages
 		void func_mru()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/mru.vim.git");
+			system("git clone https://github.com/vim-scripts/mru.vim.git ~/.vim/bundle/mru.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("MRU for VIM");			
@@ -176,8 +168,7 @@ namespace namespace_packages
 		void func_ctrlp()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/kien/ctrlp.vim.git");
+			system("git clone https://github.com/kien/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("CTRLP for VIM");
@@ -186,8 +177,7 @@ namespace namespace_packages
 		void func_fuzzyfinder()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/junegunn/fzf.git");
+			system("git clone https://github.com/junegunn/fzf.git ~/.vim/bundle/fzf");
 		
 			//ADDITION TO LIST
 			func_writeLIST("fuzzyfinder");
@@ -199,8 +189,7 @@ namespace namespace_packages
 		void func_tagbar()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/majutsushi/tagbar.git");
+			system("git clone https://github.com/majutsushi/tagbar.git ~/.vim/bundle/tagbar");
 		
 			//ADDITION TO LIST
 			func_writeLIST("tagbar");
@@ -210,8 +199,7 @@ namespace namespace_packages
 		void func_taglist()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/taglist.vim.git");
+			system("git clone https://github.com/vim-scripts/taglist.vim.git ~/.vim/bundle/taglist.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("taglist");
@@ -221,8 +209,7 @@ namespace namespace_packages
 		void func_indexer()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/everzet/vim-indexer.git");
+			system("git clone https://github.com/everzet/vim-indexer.git ~/.vim/bundle/vim-indexer");
 		
 			//ADDITION TO LIST
 			func_writeLIST("indexer");
@@ -232,8 +219,7 @@ namespace namespace_packages
 		void func_cctree()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/CCTree.git");
+			system("git clone https://github.com/vim-scripts/CCTree.git ~/.vim/bundle/CCTree");
 		
 			//ADDITION TO LIST
 			func_writeLIST("cctree");
@@ -242,8 +228,7 @@ namespace namespace_packages
 		void func_exutility()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/exvim/ex-utility.git");
+			system("git clone https://github.com/exvim/ex-utility.git ~/.vim/bundle/ex-utility");
 		
 			//ADDITION TO LIST
 			func_writeLIST("exutility");
@@ -253,8 +238,7 @@ namespace namespace_packages
 		void func_showmarks()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/ShowMarks.git");
+			system("git clone https://github.com/vim-scripts/ShowMarks.git ~/.vim/bundle/ShowMarks");
 		
 			//ADDITION TO LIST
 			func_writeLIST("showmarks");
@@ -264,8 +248,7 @@ namespace namespace_packages
 		void func_lhtags()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/LucHermitte/lh-tags.git");
+			system("git clone https://github.com/LucHermitte/lh-tags.git ~/.vim/bundle/lh-tags");
 		
 			//ADDITION TO LIST
 			func_writeLIST("lh-tags by LucHermitte");
@@ -279,8 +262,7 @@ namespace namespace_packages
 		void func_autocomplpop()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/AutoComplPop.git");
+			system("git clone https://github.com/vim-scripts/AutoComplPop.git ~/.vim/bundle/AutoComplPop");
 		
 			//ADDITION TO LIST
 			func_writeLIST("autocomplpop");
@@ -290,8 +272,7 @@ namespace namespace_packages
 		void func_youcompleteme()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/Valloric/YouCompleteMe.git");
+			system("git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouCompleteMe");
 		
 			//ADDITION TO LIST
 			func_writeLIST("youcompleteme");
@@ -301,8 +282,7 @@ namespace namespace_packages
 		void func_crefvim()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/CRefVim.git");
+			system("git clone https://github.com/vim-scripts/CRefVim.git ~/.vim/bundle/CRefVim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("crefvim");
@@ -313,11 +293,10 @@ namespace namespace_packages
 		{
 
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-erlang/vim-erlang-omnicomplete.git");
+			system("git clone https://github.com/vim-erlang/vim-erlang-omnicomplete.git ~/.vim/bundle/vim-erlang-omnicomplete");
 		
 			//ADDITION TO LIST
-			func_writeLIST("omnicomplete");
+			func_writeLIST("omnicomplete for Erlang");
 		}
 	}
 	
@@ -325,9 +304,8 @@ namespace namespace_packages
 	{	
 		void func_matchit()
 		{
-			//INSTALLATION //PATHOGEN
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/edsono/vim-matchit.git");
+			//INSTALLATION
+			system("git clone https://github.com/edsono/vim-matchit.git ~/.vim/bundle/vim-matchit");
 		
 			//ADDITION TO LIST
 			func_writeLIST("matchit");
@@ -337,8 +315,7 @@ namespace namespace_packages
 		void func_bufkill()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/bufkill.vim.git");
+			system("git clone https://github.com/vim-scripts/bufkill.vim.git ~/.vim/bundle/bufkill.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("bufkill");
@@ -348,8 +325,7 @@ namespace namespace_packages
 		void func_undotree()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/mbbill/undotree.git");
+			system("git clone https://github.com/mbbill/undotree.git ~/.vim/bundle/undotree");
 		
 			//ADDITION TO LIST
 			func_writeLIST("undotree");
@@ -359,8 +335,7 @@ namespace namespace_packages
 		void func_surround()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/tpope/vim-surround.git");
+			system("git clone https://github.com/tpope/vim-surround.git ~/.vim/bundle/vim-surround");
 		
 			//ADDITION TO LIST
 			func_writeLIST("surround");
@@ -372,8 +347,7 @@ namespace namespace_packages
 		void func_buildtoolswrapper()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/LucHermitte/vim-build-tools-wrapper.git");
+			system("git clone https://github.com/LucHermitte/vim-build-tools-wrapper.git ~/.vim/bundle/vim-build-tools-wrapper");
 		
 			//ADDITION TO LIST
 			func_writeLIST("build tools wrapper");
@@ -385,8 +359,7 @@ namespace namespace_packages
 		void func_fugitive()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/tpope/vim-fugitive.git");
+			system("git clone https://github.com/tpope/vim-fugitive.git ~/.vim/bundle/vim-fugitive");
 		
 			//ADDITION TO LIST
 			func_writeLIST("fugitive");
@@ -397,8 +370,7 @@ namespace namespace_packages
 		{
 
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/vim-scripts/perforce.vim.git");
+			system("git clone https://github.com/vim-scripts/perforce.vim.git ~/.vim/bundle/perforce.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("perforce");
@@ -407,8 +379,7 @@ namespace namespace_packages
 		void func_lawrencium()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/ludovicchabant/vim-lawrencium.git");
+			system("git clone https://github.com/ludovicchabant/vim-lawrencium.git ~/.vim/bundle/vim-lawrencium");
 		
 			//ADDITION TO LIST
 			func_writeLIST("lawrencium");
@@ -418,8 +389,7 @@ namespace namespace_packages
 		void func_gitv()
 		{
 			//INSTALLATION
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/gregsexton/gitv.git");
+			system("git clone https://github.com/gregsexton/gitv.git ~/.vim/bundle/gitv");
 		
 			//ADDITION TO LIST
 			func_writeLIST("GitV");
@@ -429,8 +399,7 @@ namespace namespace_packages
 		void func_splice()
 		{
 			//INSTALLATION //PATHOGEN
-			system("cd ~/.vim/bundle");
-			system("git clone https://github.com/sjl/splice.vim.git");
+			system("git clone https://github.com/sjl/splice.vim.git ~/.vim/bundle/splice.vim");
 		
 			//ADDITION TO LIST
 			func_writeLIST("Splice");

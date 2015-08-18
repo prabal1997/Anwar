@@ -9,11 +9,101 @@
 //"ind_mdl.cpp" holds independent functions used for various purposes
 //"pck_mdl.cpp" holds list of packages and information on how to install them and change the .vimrc accrodingly
 
+//----------------------------------------------------
+
 //RUNNING THE PROGRAM
 //Navigate to the directory containing all the necessary files in the console
 //Use the command " g++ anwar.cpp anwar_head.h fwd_decl.h format.cpp ind_mdl.cpp pck_mdl.cpp " in console
 //execute the file named 'a.out' using " ./a.out " command in console
 
+//----------------------------------------------------
+//LIST OF RESOURCES AVAILABLE IN PROJECT FILES 
+
+//FUNCTIONS IN format.cpp
+//namespace namespace_format
+    //func_intro1()                                                 : PRINTS ASCII ART INTRODUCTION
+    //func_print(space_before, string_sentence, space_after)        : PRINTS A SENTENCE WITH SPACES BEFORE AND AFTER IT ( if space_after=-1, then the cursor stays on the same line)
+    //func_line(spaces_before, space_after)                         : PRINTS A PAGE DIVIDER WITH SPACES BEFORE AND AFTER IT
+
+//FUNCTIONS IN ind_mdl.cpp
+//char func_validPrompt(int, std::string)                           : RECEIVES A VAILD INPUT FROM THE USER (AND RETURNS IT)
+//void func_writeVIM(std::string)                                   : WRITES TO THE .vimrc FILE IN THE CURRENT DIRECTORY
+//bool func_internetAvail()                                         : CHECKS INTERNET AVAILIBILITY (AND RETURNS THE TRUTH VALUE)
+//func_validInput2(number_of_option, message_to_print)              : RECEIVES A VAILD INPUT RANGING FROM 1 to 9
+//func_writeLIST(input_string_here)                                 : WRITES TO list.txt
+//namespace namespace_def
+    //func_help(input_help_code)                                    : RECEIVES A HELP CODE AND RETURNS HELP FOR THE ISSUE
+
+//FUNCTIONS IN pck_mdl.cpp
+//func_intro1()                                                     : PRINTS ASCII ART INTRODUCTION
+//func_print(space_before, string_sentence, space_after)            : PRINTS A SENTENCE WITH SPACES BEFORE AND AFTER IT ( if space_after=-1, then the cursor stays on the same line)
+//func_line(spaces_before, space_after)                             : PRINTS A PAGE DIVIDER WITH SPACES BEFORE AND AFTER IT
+//namespace namespace_packages
+    //namespace namespace_language
+        //language_cplusplus                                        : INSTALLS C++
+        //language_c                                                : INSTALLS C 
+        //language_csharp                                           : INSTALLS C#
+		//language_python                                           : INSTALLS Python
+		//language_java                                             : INSTALLS JAVA
+		//language_lisp                                             : INSTALLS LISP
+		//language_haskell                                          : INSTALLS HASKELL
+		
+	//namespace namespace_project
+	    //func_nerdtree                                             : INSTALLS NERDTree
+		//func_vtreeexplorer                                        : INSTALLS vtreeexplorer
+		//func_project                                              : INSTALLS project
+		//func_ide                                                  : INSTALL ide
+			
+	//namespace namespace_buffer
+		//func_bufexplorer                                          : INSTALLS bufexplorer
+		//func_minibufexpl                                          : INTALLS minibufexpl
+		//func_commandtplugin                                       : INSTALLS Command-T plugin
+		//func_mru                                                  : INSTALLS MRU 
+		//func_ctrlp                                                : INSTALLS ctrlp 
+		//func_fuzzyfinder                                          : INSTALLS FuzztFinder
+		
+	//namespace namespace_code
+		//func_taglist                                              : INSTALLS taglist 
+		//func_tagbar                                               : INSTALLS tagbar 
+		//func_indexer                                              : INSTALLS indexer 
+		//func_cctree                                               : INSTALLS CCTree 
+		//func_exutility                                            : INSTALLS exUtilityy
+		//func_showmarks                                            : INSTALLS ShowMarks  
+		//func_lhtags                                               : INSTALLS lh-tags
+		
+	//namespace namespace_codewrite
+		//func_autocomplpop                                         : INSTALLS AutoComplPop 
+		//func_youcompleteme                                        : INSTALLS YouCompleteMe 
+		//func_crefvim                                              : INSTALLS CRefVim 
+		//func_omnicompletion                                       : INSTALLS Omni Complete (for Erlang)
+
+	//namespace namespace_funct
+		//func_matchit                                              : INSTALLS matchit 
+		//func_bufkill                                              : INSTALLS bufkill 
+		//func_undotree                                             : INSTALLS undotree 
+		//func_surround                                             : INSTALLS surround 
+
+	//namespace namespace_compl
+		//func_buildtoolswrapper                                    : INSTALLS Build Tools Wrapper
+		
+	//namespace namespace_integ                                     
+		//func_fugitive                                             : INSTALLS Fugitive 
+		//func_perforce                                             : INSTALLS Perforce 
+		//func_lawrencium                                           : INSTALLS Lawrencium 
+		//func_gitv                                                 : INSTALLS GitV 
+		//func_splice                                               : INSTALLS Splice
+
+//HELP CODES IN fwd_decl.h FOR ind_mdl.cpp
+//namespace namespace_def
+	 //HELP_VIM                                                     : HELP CODE FOR VIM, cURL, Git, AND Pathogen INSTALLATION 
+	 //HELP_LANG                                                    : HELP CODE FOR COMPILER/INTERPRETOR INSTALLATION 
+	 //HELP_PROJECT                                                 : HELP CODE FOR PROJECT BROWSERS 
+	 //HELP_BUFFER                                                  : HELP CODE FOR BUFFERS
+	 //HELP_CODE                                                    : HELP CODE FOR CODE BROWSING UTILITIES
+	 //HELP_CODEWRITE                                               : HELP CODE FOR CODE WRITING UTILITIES
+	 //HELP_FUNCT                                                   : HELP CODE FOR VIM FUNCTIONALITY EXTENDERS
+	 //HELP_COMPL                                                   : HELP CODE FOR COMPILERS IN VIM 
+	 
 //----------------------------------------------------
 
 #include"anwar_head.h"
@@ -166,7 +256,7 @@ func_line(2,1);
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install a Project/Filetree browsing tool for VIM? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -242,7 +332,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install a interpretors/compilers for programming? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -253,7 +343,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 		func_print(0, "C#                                             3", 0);
 		func_print(0, "Python                                         4", 0);
 		func_print(0, "JAVA                                           5", 0);
-		func_print(0, "JAVA                                           6", 0);
+		func_print(0, "LISP                                           6", 0);
 		func_print(0, "Haskell                                        7", 1);		
 		
 		int int_project_choice;
@@ -334,7 +424,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install buffers/file browsing utilities for VIM? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -421,7 +511,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install a code browsers for VIM? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -513,7 +603,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install code autocomplete and reference tools for VIM? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -523,7 +613,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 		func_print(0, "autocomplpop                                   1", 0);
 		func_print(0, "youcompleteme                                  2", 0);
 		func_print(0, "CRefVim                                        3", 0);
-		func_print(0, "Omni Completion                                4", 1);
+		func_print(0, "Omni Completion (for Erlang)                   4", 1);
 		
 		int int_project_choice;
 		int_project_choice = func_validInput2(4, "Please enter the number corresponding to the tool you would like to install:");
@@ -591,7 +681,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install tools for extending basic VIM functionality? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -669,7 +759,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 {
 	int char_project = func_validPrompt(3, "Would you like to install tools for compiling code within VIM? (Y/N/H):");
-	func_line(2,2);
+	func_line(2,1);
 
 	if (char_project=='Y' || char_project=='y')
 	{
@@ -728,15 +818,16 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 }
 
 //copying the final list of downloaded components to the desktop and the hidden .vim directory in ~
-func_print(0, "CREATING A LIST OF INSTALLED COMPONENTS...", 1);
+func_print(1, "CREATING A LIST OF INSTALLED COMPONENTS...", 1);
 system("cp list.txt ~/Desktop");
 system("cp list.txt ~/.vim");
+func_print(1, "Comannd executed.",0);
 func_line(2,2);
 
 //THANK-YOU MESSAGE
 goto_THANKS:	
-	func_print(0, "Thanks.\n   Please report any bugs/issues at prabal.gupta.97@gmail.com.", 0);
-	func_print(0, "Please refer to the list of installed components on your desktop and inside the hidden .vim directory.", 0);
+	func_print(0, "Thanks.\n   Please report any bugs/issues at https://github.com/prabal1997/anwar-ide-cli-setup/issues", 0);
+	func_print(1, "Please refer to the list of installed components on your desktop and inside the hidden .vim directory.", 0);
 	func_line(2, 2);
 	
 	return 0;
