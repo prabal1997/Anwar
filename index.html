@@ -1,62 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
+    <meta charset="UTF-8">
     <title>Anwar IDE CLI Setup by prabal1997</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/prabal1997/anwar-ide-cli-setup">View on GitHub</a>
-    <div class="shell">
+    <section class="page-header">
+      <h1 class="project-name">Anwar IDE CLI Setup</h1>
+      <h2 class="project-tagline">A program that simplifies the process of creating a custom VIM based IDE easier for those new to developing on Ubuntu.</h2>
+      <a href="https://github.com/prabal1997/anwar-ide-cli-setup" class="btn">View on GitHub</a>
+      <a href="https://github.com/prabal1997/anwar-ide-cli-setup/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/prabal1997/anwar-ide-cli-setup/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Anwar IDE CLI Setup</h1>
-            <h2>A program that simplifies the process of creating a custom VIM based IDE easier for those new to developing on Ubuntu.</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/prabal1997/anwar-ide-cli-setup/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/prabal1997/anwar-ide-cli-setup/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
-        <div class="highlight highlight-sh"><pre>       <span class="pl-s"><span class="pl-pds">"</span>8888    888b    888    888       888           d8888    8888888b.  </span>
-<span class="pl-s">      d88888    8888b   888    888   o   888          d88888    888   Y88b </span>
-<span class="pl-s">     d88P888    88888b  888    888  d8b  888         d88P888    888    888 </span>
-<span class="pl-s">    d88P 888    888Y88b 888    888 d888b 888        d88P 888    888   d88P </span>
-<span class="pl-s">   d88P  888    888 Y88b888    888d88888b888       d88P  888    8888888P8  </span>
-<span class="pl-s">  d88P~~~888    888  Y88888    88888P Y88888      d88P~~~888    888 T88b   </span>
-<span class="pl-s"> d8888888888    888   Y8888    8888P   Y8888     d8888888888    888  T88b  </span>
-<span class="pl-s">d88P     888    888    Y888    888P     Y888    d88P     888    888   T88b</span></pre></div>
-
-<h1>
+    <section class="main-content">
+      <h1>
 <a id="anwar" class="anchor" href="#anwar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Anwar</h1>
+
+<p>Anwar is a simple, lightweight tool that gives you the power to build your own development enviornment in VIM.
+<img src="http://i.imgur.com/kIXS6Yr.jpg" alt="Anwar Logo"></p>
 
 <p>Anwar is a CLI(Command Line Interface) program that simplifies the process of creating a custom VIM based IDE(Integrated Development Environment) for everyone, especially those new to developing on Ubuntu.</p>
 
@@ -65,11 +32,16 @@
 
 <p>Anwar helps you install the different components that an IDE uses and configures the VIM text-editor appropriately. This allows you to develop your own blazing-fast lightweight VIM based IDE on Ubuntu.</p>
 
+<p>You can use Anwar to set up a new development environment in a matter of mere minutes, allowing you to practically set up any machine as your development hub - whether on the cloud, or the desktop.</p>
+
 <h2>
 <a id="what-systems-can-anwar-run-on" class="anchor" href="#what-systems-can-anwar-run-on" aria-hidden="true"><span class="octicon octicon-link"></span></a>What systems can Anwar run on?</h2>
 
-<p>Anwar has been developed to work on Ubuntu linux. Anwar also works with Ubuntu derivatives, which includes Ubuntu Kylin, Edubuntu, Ubuntu GNOME, Kubuntu, Lubuntu, Xubuntu, Ubuntu Studio, and Ubuntu MATE.
-This is not an exhaustive list and Anwar should work on other Ubuntu derivatives too.</p>
+<p>Anwar is compatible with Ubuntu and all its official flavours, including Ubuntu Kylin, Edubuntu, Ubuntu GNOME, Kubuntu, Lubuntu, Xubuntu, Ubuntu Studio, and Ubuntu MATE.</p>
+
+<p><img src="http://i.imgur.com/E31M5rT.jpg" alt="Ubuntu Flavours"></p>
+
+<p>This is not an exhaustive list and Anwar should work on other Ubuntu derivatives too.</p>
 
 <h2>
 <a id="anwar-for-ide-building" class="anchor" href="#anwar-for-ide-building" aria-hidden="true"><span class="octicon octicon-link"></span></a>Anwar for IDE Building</h2>
@@ -107,7 +79,7 @@ chmod u+x anwar.out
 <h2>
 <a id="contributing-to-anwar" class="anchor" href="#contributing-to-anwar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing to Anwar</h2>
 
-<p>To contribute to Anwar, create a new branch and then sumbit a merge request. Please understand that only valuable patches will be integrated into the master branch. Please read the following instructions to install pre-requisite compilers, clone this repository, understand the structure of Anwar, and to compile your build.</p>
+<p>To contribute to Anwar, create a new branch and then sumbit a pull request. Please understand that only valuable patches will be integrated into the master branch. Please read the following instructions to install pre-requisite compilers, clone this repository, understand the structure of Anwar, and to compile your build.</p>
 
 <h3>
 <a id="installing-compilers" class="anchor" href="#installing-compilers" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installing Compilers</h3>
@@ -126,6 +98,8 @@ sudo apt-get install g++</pre></div>
 <h3>
 <a id="downloading-anwar-1" class="anchor" href="#downloading-anwar-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Downloading Anwar</h3>
 
+<p>Execute the following commands in sequence to download Anwar on your Ubuntu operating system.</p>
+
 <div class="highlight highlight-sh"><pre><span class="pl-c"># creating a new directory</span>
 mkdir <span class="pl-k">~</span>/anwar
 
@@ -138,7 +112,7 @@ git clone https://github.com/prabal1997/anwar-ide-cli-setup.git</pre></div>
 <h3>
 <a id="understanding-anwar" class="anchor" href="#understanding-anwar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Understanding Anwar</h3>
 
-<p>Anwar has been developed in a highly modular way. Please Read the CONTRIBUTE.md file to understand the structure of Anwar.</p>
+<p>Anwar has been developed in a highly modular way. Please read the introductory notes inside <code>anwar.cpp</code> file to understand the structure of Anwar.</p>
 
 <h3>
 <a id="compiling--executing-anwar" class="anchor" href="#compiling--executing-anwar" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compiling &amp; Executing Anwar</h3>
@@ -156,25 +130,23 @@ chmod u+x a.out
 ./a.out</pre></div>
 
 <h2>
+<a id="future" class="anchor" href="#future" aria-hidden="true"><span class="octicon octicon-link"></span></a>Future</h2>
+
+<p>Anwar will eventually have <code>ncurses</code> based GUI to simplify the program layout and flow. Moreover, development is undergoing to develop a release of Anwar compatible with Microsoft Windows series of operating systems.</p>
+
+<h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>'Anwar' is under Apache License Version 2.0. Please read LICENSE for more information.</p>
-      </section>
+<p>'Anwar' is licenced under Apache License Version V2. Please read LICENSE for more information.</p>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/prabal1997">prabal1997</a> can be found on <a href="https://github.com/prabal1997/anwar-ide-cli-setup">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/prabal1997/anwar-ide-cli-setup">Anwar IDE CLI Setup</a> is maintained by <a href="https://github.com/prabal1997">prabal1997</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
-    </div>
+    </section>
 
-    
+  
   </body>
 </html>
