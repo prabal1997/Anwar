@@ -821,7 +821,7 @@ for(char REPEAT(1), char_projectAgain('N'); REPEAT==1; )
 func_print(1, "CREATING A LIST OF INSTALLED COMPONENTS...", 1);
 system("cp list.txt ~/Desktop");
 system("cp list.txt ~/.vim");
-func_print(1, "Comannd executed.",0);
+func_print(1, "Command executed.",0);
 func_line(2,2);
 
 //THANK-YOU MESSAGE
