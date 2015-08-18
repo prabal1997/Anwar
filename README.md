@@ -6,6 +6,8 @@ Anwar is a CLI(Command Line Interface) program that simplifies the process of cr
 ## What does Anwar do?
 Anwar helps you install the different components that an IDE uses and configures the VIM text-editor appropriately. This allows you to develop your own blazing-fast lightweight VIM based IDE on Ubuntu.
 
+![Sample IDE](http://i.imgur.com/1hpIIDb.png)
+
 You can use Anwar to set up a new development environment in a matter of mere minutes, allowing you to practically set up any machine as your development hub - whether on the cloud, or the desktop.
 
 ## What systems can Anwar run on?
