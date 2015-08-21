@@ -43,66 +43,66 @@
         //language_cplusplus                                        : INSTALLS C++
         //language_c                                                : INSTALLS C 
         //language_csharp                                           : INSTALLS C#
-		//language_python                                           : INSTALLS Python
-		//language_java                                             : INSTALLS JAVA
-		//language_lisp                                             : INSTALLS LISP
-		//language_haskell                                          : INSTALLS HASKELL
+		//language_python                                   : INSTALLS Python
+		//language_java                                     : INSTALLS JAVA
+		//language_lisp                                     : INSTALLS LISP
+		//language_haskell                                  : INSTALLS HASKELL
 		
 	//namespace namespace_project
-	    //func_nerdtree                                             : INSTALLS NERDTree
-		//func_vtreeexplorer                                        : INSTALLS vtreeexplorer
-		//func_project                                              : INSTALLS project
-		//func_ide                                                  : INSTALL ide
+	    //func_nerdtree                                         : INSTALLS NERDTree
+		//func_vtreeexplorer                                : INSTALLS vtreeexplorer
+		//func_project                                      : INSTALLS project
+		//func_ide                                          : INSTALL ide
 			
 	//namespace namespace_buffer
-		//func_bufexplorer                                          : INSTALLS bufexplorer
-		//func_minibufexpl                                          : INTALLS minibufexpl
-		//func_commandtplugin                                       : INSTALLS Command-T plugin
-		//func_mru                                                  : INSTALLS MRU 
-		//func_ctrlp                                                : INSTALLS ctrlp 
-		//func_fuzzyfinder                                          : INSTALLS FuzztFinder
+		//func_bufexplorer                                  : INSTALLS bufexplorer
+		//func_minibufexpl                                  : INTALLS minibufexpl
+		//func_commandtplugin                               : INSTALLS Command-T plugin
+		//func_mru                                          : INSTALLS MRU 
+		//func_ctrlp                                        : INSTALLS ctrlp 
+		//func_fuzzyfinder                                  : INSTALLS FuzztFinder
 		
 	//namespace namespace_code
-		//func_taglist                                              : INSTALLS taglist 
-		//func_tagbar                                               : INSTALLS tagbar 
-		//func_indexer                                              : INSTALLS indexer 
-		//func_cctree                                               : INSTALLS CCTree 
-		//func_exutility                                            : INSTALLS exUtilityy
-		//func_showmarks                                            : INSTALLS ShowMarks  
-		//func_lhtags                                               : INSTALLS lh-tags
+		//func_taglist                                      : INSTALLS taglist 
+		//func_tagbar                                       : INSTALLS tagbar 
+		//func_indexer                                      : INSTALLS indexer 
+		//func_cctree                                       : INSTALLS CCTree 
+		//func_exutility                                    : INSTALLS exUtilityy
+		//func_showmarks                                    : INSTALLS ShowMarks  
+		//func_lhtags                                       : INSTALLS lh-tags
 		
 	//namespace namespace_codewrite
-		//func_autocomplpop                                         : INSTALLS AutoComplPop 
-		//func_youcompleteme                                        : INSTALLS YouCompleteMe 
-		//func_crefvim                                              : INSTALLS CRefVim 
-		//func_omnicompletion                                       : INSTALLS Omni Complete (for Erlang)
+		//func_autocomplpop                                 : INSTALLS AutoComplPop 
+		//func_youcompleteme                                : INSTALLS YouCompleteMe 
+		//func_crefvim                                      : INSTALLS CRefVim 
+		//func_omnicompletion                               : INSTALLS Omni Complete (for Erlang)
 
 	//namespace namespace_funct
-		//func_matchit                                              : INSTALLS matchit 
-		//func_bufkill                                              : INSTALLS bufkill 
-		//func_undotree                                             : INSTALLS undotree 
-		//func_surround                                             : INSTALLS surround 
+		//func_matchit                                      : INSTALLS matchit 
+		//func_bufkill                                      : INSTALLS bufkill 
+		//func_undotree                                     : INSTALLS undotree 
+		//func_surround                                     : INSTALLS surround 
 
 	//namespace namespace_compl
-		//func_buildtoolswrapper                                    : INSTALLS Build Tools Wrapper
+		//func_buildtoolswrapper                            : INSTALLS Build Tools Wrapper
 		
 	//namespace namespace_integ                                     
-		//func_fugitive                                             : INSTALLS Fugitive 
-		//func_perforce                                             : INSTALLS Perforce 
-		//func_lawrencium                                           : INSTALLS Lawrencium 
-		//func_gitv                                                 : INSTALLS GitV 
-		//func_splice                                               : INSTALLS Splice
+		//func_fugitive                                     : INSTALLS Fugitive 
+		//func_perforce                                     : INSTALLS Perforce 
+		//func_lawrencium                                   : INSTALLS Lawrencium 
+		//func_gitv                                         : INSTALLS GitV 
+		//func_splice                                       : INSTALLS Splice
 
 //HELP CODES IN fwd_decl.h FOR ind_mdl.cpp
 //namespace namespace_def
-	 //HELP_VIM                                                     : HELP CODE FOR VIM, cURL, Git, AND Pathogen INSTALLATION 
-	 //HELP_LANG                                                    : HELP CODE FOR COMPILER/INTERPRETOR INSTALLATION 
-	 //HELP_PROJECT                                                 : HELP CODE FOR PROJECT BROWSERS 
-	 //HELP_BUFFER                                                  : HELP CODE FOR BUFFERS
-	 //HELP_CODE                                                    : HELP CODE FOR CODE BROWSING UTILITIES
-	 //HELP_CODEWRITE                                               : HELP CODE FOR CODE WRITING UTILITIES
-	 //HELP_FUNCT                                                   : HELP CODE FOR VIM FUNCTIONALITY EXTENDERS
-	 //HELP_COMPL                                                   : HELP CODE FOR COMPILERS IN VIM 
+	 //HELP_VIM                                                 : HELP CODE FOR VIM, cURL, Git, AND Pathogen INSTALLATION 
+	 //HELP_LANG                                                : HELP CODE FOR COMPILER/INTERPRETOR INSTALLATION 
+	 //HELP_PROJECT                                             : HELP CODE FOR PROJECT BROWSERS 
+	 //HELP_BUFFER                                              : HELP CODE FOR BUFFERS
+	 //HELP_CODE                                                : HELP CODE FOR CODE BROWSING UTILITIES
+	 //HELP_CODEWRITE                                           : HELP CODE FOR CODE WRITING UTILITIES
+	 //HELP_FUNCT                                               : HELP CODE FOR VIM FUNCTIONALITY EXTENDERS
+	 //HELP_COMPL                                               : HELP CODE FOR COMPILERS IN VIM 
 	 
 //----------------------------------------------------
 
