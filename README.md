@@ -36,14 +36,14 @@ sudo apt-get update
 sudo apt-get install git
 
 # downloading the executable from github to the new directory
-git clone https://github.com/prabal1997/anwar-ide-cli-setup.git
+git clone https://github.com/prabal1997/Anwar.git
 ```
 
 ###Starting Anwar
 Execute the following commands in sequence to start Anwar for use
 ```sh
 # navigating to the correct directory
-cd ~/.anwar/anwar-ide-cli-setup
+cd ~/.anwar/Anwar
 
 # changing file permissions for Anwar
 chmod u+x anwar.out
@@ -78,7 +78,7 @@ mkdir ~/anwar
 cd ~/anwar
 
 # downloading Anwar inside the new directory
-git clone https://github.com/prabal1997/anwar-ide-cli-setup.git
+git clone https://github.com/prabal1997/Anwar.git
 ```
 
 ###Understanding Anwar
@@ -87,7 +87,7 @@ Anwar has been developed in a highly modular way. Please read the introductory n
 ###Compiling & Executing Anwar
 ```sh
 # navigate to the directory where Anwar is located
-cd ~/anwar/anwar-ide-cli-setup
+cd ~/anwar/Anwar
 
 # compiling Anwar by listing every file with '.cpp' or '.h' extension after 'g++'
 g++ anwar.cpp anwar_head.h fwd_decl.h format.cpp ind_mdl.cpp pck_mdl.cpp 
