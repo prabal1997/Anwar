@@ -55,7 +55,7 @@ chmod u+x anwar.out
 ## Contributing to Anwar
 To contribute to Anwar, create a new branch and then sumbit a pull request. Please understand that only valuable patches will be integrated into the master branch. Please read the following instructions to install pre-requisite compilers, clone this repository, understand the structure of Anwar, and to compile your build.
 
-###Installing Compilers
+### Installing Compilers
 Anwar uses 'C', 'C++', and 'BASH' programming languages to operate. While 'BASH' is a part of the Ubuntu operating system by default, 'C' and 'C++' compilers might not be available on some machines running Ubuntu and its derivatives. Use the following commands to install the compilers for 'C' and 'C++' programming languages.
 ```sh
 # updating list of repositories
@@ -68,7 +68,7 @@ sudo apt-get install gcc
 sudo apt-get install g++
 ```
 
-###Downloading Anwar
+### Downloading Anwar
 Execute the following commands in sequence to download Anwar on your Ubuntu operating system.
 ```sh
 # creating a new directory
@@ -81,10 +81,10 @@ cd ~/anwar
 git clone https://github.com/prabal1997/Anwar.git
 ```
 
-###Understanding Anwar
+### Understanding Anwar
 Anwar has been developed in a highly modular way. Please read the introductory notes inside ```anwar.cpp ``` file to understand the structure of Anwar.
 
-###Compiling & Executing Anwar
+### Compiling & Executing Anwar
 ```sh
 # navigate to the directory where Anwar is located
 cd ~/anwar/Anwar
@@ -101,7 +101,7 @@ chmod u+x a.out
 ## Future
 Anwar will eventually have ```ncurses``` based GUI to simplify the program layout and flow. Moreover, development is undergoing to develop a release of Anwar compatible with Microsoft Windows series of operating systems.
 
-##License
+## License
 'Anwar' is licensed under Apache License Version V2. Please read LICENSE for more information.
 
 
